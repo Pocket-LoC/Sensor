@@ -46,7 +46,14 @@ void Serial_input() {
        int gain_type = constrain(atoi(&Buffer_Data[1]),0,10);
        set_gain(0, gain_type);
        set_gain(1, gain_type);
-       Serial_println("OK");
+
+       String out = "OK. Selected gain: ";
+       if(gain_type == 0){
+          out = out + "0.50x";
+       }else{
+          out = out + String(pow(2, gain_type-1)) + "x";
+       }
+       Serial_println(out);
     }else if (Buffer_Data[0]=='C'){ //Set ADC configuration - "C0100110101\r\n" Activate/Deactviate individual photo sensors. The first 6 sensors set will be connected to ADCs.
       //F1, F2, F3, F4, F5, F6, F7, F8, CLEAR, NIR
       uint8_t selection[10] = {};
