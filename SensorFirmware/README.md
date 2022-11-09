@@ -9,22 +9,33 @@ Once flashed, remove the ISP header pins from the sensor. We will (hopefully) ne
 ### Using the Firmware
 Clone this Repo and open the .ino file in the Arduino IDE. Connect the freshly flashed sensor with a USB cable, select the correct port in the IDE (the sensor will appear as "Arduino Micro"), and uppload the sketch. That will take a few moments and the LEDs on the sensor will flash.
 
-Finally, you are ready to go! You can now set and use the sensor as a serial device. Here is a list of commands you can send (each command must be terminated with "/r/n"):
+Finally, you are ready to go! You can now set and use the sensor as a serial device. Here is a list of commands you can send (each command must be terminated with "\r\n"):
 
 - START
-  Start streaming data read from the spectral sensors over the serial connection. The data will have the format "<A0>\t<B0>\t<C0>\t<D0>\t<E0>\t<F0>\t<X0>\t<A1>\t<B1>\t<C1>\t<D1>\t<E1>\t<F1>\t<X1>", where <A0> through <F0> are the sensor values read for the activated photodiodes (rational number with 10 digit decimal precision) of the first sensor and <X0> is a flag to indicate if at least one of the photodiodes is saturated (i.e. the maximal value was reached). <A1> through <X1> are the same parameters for the second sensor.
+
+  Start streaming data read from the spectral sensors over the serial connection. The data will have the format 
+  
+  "\<A0>\t\<B0>\t\<C0>\t\<D0>\t\<E0>\t\<F0>\t\<X0>\t\<A1>\t\<B1>\t\<C1>\t\<D1>\t\<E1>\t\<F1>\t\<X1>"
+  
+  where \<A0> through \<F0> are the sensor values read for the activated photodiodes (rational number with 10 digit decimal precision) of the first sensor and \<X0> is a flag to indicate if at least one of the photodiodes is saturated (i.e. the maximal value was reached). \<A1> through \<X1> are the same parameters for the second sensor.
  
 - STOP
+ 
   Stop outputting data to the serial connection.
   
-- T<n> (e.g. T5)
+- T\<n> (e.g. T5)
+  
   Set the sample time in ms used for each sensor value acquisition. As two sensor values have to be read and some margin for timing errors is added in the firmware, the actual time between values reported on the serial connection is 4*n. As the sensitivity depends on the sample duration, a longer duration (i.e. lower sample rate) will also increase accuracy. Typically, the gain (see below) will have to be adjusted to fit the sample duration and environment conditions.
   
-- G<n> (e.g. G3)
+- G\<n> (e.g. G3)
+  
   Set the input gain applied to the photodiodes. The gain should ideally be set to the highest value that never causes a saturation error (see above: Flag reported with output data). "n" can be any integer between 0 and 10 and corresponds to teh selectable gains: 0.5x, 1x, 2x, 4x, ...
   
 - C<0123456789> (e.g. C1010101011)
-  Configure which photodiodes should be used. The [AS7341](https://ams.com/en/as7341) contains a total of 10 different photodiodes that may be used in the sensor, but only 6 ADCs. We therefore have to select which 6 photodiodes we want to use (i.e. which optical frequencies we want to observe). A photodiode is selected by setting a "1" in the command and deselected with a "0". The positions correspond to the following list (see the Fig. below, taken from the spectral sensors manual, for explanation): F1, F2, F3, F4, F5, F6, F7, F8, CLEAR, NIR. The first six activated photodiodes will be connected to ADCs and the output will be in the same order as the list. Do not worry - teh sensor will confirm the actually set photodiodes on the serial connection.
+  
+  Configure which photodiodes should be used. The [AS7341](https://ams.com/en/as7341) contains a total of 10 different photodiodes that may be used in the sensor, but only 6 ADCs. We therefore have to select which 6 photodiodes we want to use (i.e. which optical frequencies we want to observe). A photodiode is selected by setting a "1" in the command and deselected with a "0". The positions correspond to the following list (see the Fig. below, taken from the spectral sensors manual, for explanation): F1, F2, F3, F4, F5, F6, F7, F8, CLEAR, NIR. The first six activated photodiodes will be connected to ADCs and the output will be in the same order as the list. Do not worry - the sensor will confirm the actually set photodiodes on the serial connection.
+  
+  ![Spectral Distriution AS7341](https://user-images.githubusercontent.com/42568983/200896588-a6347954-e436-44e7-8c64-45ed0d1019f8.PNG)
 
 ### General Information
 
