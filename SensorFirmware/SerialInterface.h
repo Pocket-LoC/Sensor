@@ -2,7 +2,7 @@ char Buffer_Data[50];
 uint8_t strPointer=0;
 
 void Serial_init() {
-  Serial.begin(115200);
+  Serial.begin(9600);
   strPointer=0;
   Buffer_Data[strPointer]=0;
 
@@ -23,7 +23,7 @@ void Serial_println(String str) {
   Serial.println(str);
 }
 
-void Serial_input() {
+void Serial_input() { 
   while ((Serial.available() > 0) && (strPointer<50)) {
     Buffer_Data[strPointer] = Serial.read();
     if ((Buffer_Data[strPointer]>='a') && (Buffer_Data[strPointer]<='z')) Buffer_Data[strPointer]+='A'-'a';  //Großbuchstaben
@@ -47,12 +47,7 @@ void Serial_input() {
        set_gain(0, gain_type);
        set_gain(1, gain_type);
 
-       String out = "OK. Selected gain: ";
-       if(gain_type == 0){
-          out = out + "0.50x";
-       }else{
-          out = out + String(pow(2, gain_type-1)) + "x";
-       }
+       String out = "OK. Selected gain: " + String(pow(2, gain_type-1)) + "x";
        Serial_println(out);
     }else if (Buffer_Data[0]=='C'){ //Set ADC configuration - "C0100110101\r\n" Activate/Deactviate individual photo sensors. The first 6 sensors set will be connected to ADCs.
       //F1, F2, F3, F4, F5, F6, F7, F8, CLEAR, NIR
