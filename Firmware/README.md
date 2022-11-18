@@ -42,7 +42,7 @@ Finally, you are ready to go! You can now set and use the sensor as a serial dev
   ![Spectral Distriution AS7341](https://user-images.githubusercontent.com/42568983/200896588-a6347954-e436-44e7-8c64-45ed0d1019f8.PNG)
 
 #### Getting Started
-You can use the "serial monitor" in the Arduino IDE to quickly test the sensor with some first commands. In the [software folder](https://github.com/Pocket-LoC/Sensor/tree/main/Software) you will find a Python example to configure the sensor, perform an automatic gain adjustment, and show a live plot of the recorded data.
+You can use the "serial monitor" in the Arduino IDE to quickly test the sensor with some first commands. Make sure you select carriage return and newline as command terminators. In the [software folder](https://github.com/Pocket-LoC/Sensor/tree/main/Software) you will find a Python example to configure the sensor, perform an automatic gain adjustment, and show a live plot of the recorded data.
 
 #### General Information
 
