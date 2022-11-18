@@ -16,7 +16,8 @@ Adafruit_AS7341 sensor1;
 
 
 float DEFAULT_SAMPLE_TIME = 5; //ms
-uint16_t LED_CURRENT = 250; //mA range: 4-258mA
+//The LED current should be set to max. 150mA for the used LEDs!
+uint16_t LED_CURRENT = 150; //mA range: 4-258mA
 uint8_t ATIME = 0; //0-254 //set 0 for maximal granularity with ASTEP
 as7341_gain_t DEFAULT_GAIN = AS7341_GAIN_4X; //0_5, 1, 2, 4, 8, 16, 32, 64, 128, 256, 512
 
