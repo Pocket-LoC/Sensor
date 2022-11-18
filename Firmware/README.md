@@ -1,7 +1,9 @@
-## Sensor Firmware
-This is the firmware for the Pocket LoC sensor. As the sensor uses an ATmega32U4 microcontroller, we can use it like an Arduino Micro (once flashed with the appropriate bootloader). To use this firmware install the [Arduino IDE](https://www.arduino.cc/en/software).
+## Pocket LoC Sensor
 
-### Flashing the bootloader
+### Firmware
+This is the firmware for the Pocket LoC sensor. As the sensor uses an ATmega32U4 microcontroller, we can use it like an Arduino Micro. To use this firmware install the [Arduino IDE](https://www.arduino.cc/en/software).
+
+#### Flashing the bootloader
 Before we can use the freshly assembled sensor via the USB connection, we have to flash it with a bootloader. This can be easily done from the Arduino IDE using either a different [Arduino](https://docs.arduino.cc/built-in-examples/arduino-isp/ArduinoISP#the-bootloader) or a dedicated [ISP](https://docs.arduino.cc/hacking/software/Bootloader#burning-the-bootloader) device. Remember to select "Arduino Micro" as a target. All other necessary information can be found in the linked manuals.
 
 Once flashed, remove the ISP header pins from the sensor. We will (hopefully) never need them again and they obstruct the sensor placement in the Pocket LoC.
