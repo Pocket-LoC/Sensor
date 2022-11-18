@@ -10,7 +10,7 @@ The sensor for the Pocket LoC contains two spectral sensors ([AS7341](https://am
 ### PCB assembly
 All design files for the PCB can be found as an Altium project in the [hardware folder](https://github.com/Pocket-LoC/Sensor/tree/main/Hardware). You can order the ready printed PCB from manufacturers like [JLCPCB](https://jlcpcb.com/) or [multi-cb](https://www.multi-circuit-boards.eu/en/index.html) and assemble it yourself (requires tools and skills for SMD assembly), order an assembled PCB or contact me.
 
-Once assembled, the microcontroller will have to be initially flashed with a bootloader (requires an ISP device, e.g. an Arduino) and then can be programmed and used via a regular USB connection. Details on flashing th ebootloader and firmware usage can be found [here](https://github.com/Pocket-LoC/Sensor/tree/main/Firmware). 
+Once assembled, the microcontroller will have to be initially flashed with a bootloader (requires an ISP device, e.g. an Arduino) and then can be programmed and used via a regular USB connection. Details on flashing the bootloader and firmware usage can be found [here](https://github.com/Pocket-LoC/Sensor/tree/main/Firmware). 
 
 ### Concept
 The sensor is designed for optical detection and colour characterisation of microfluidic droplets. The two spectral sensors cover the visible light range up to the near infrared spectrum. Placed along a microfluidic channel, the two identical sensors additionally enable detection of droplet speed and size. Two LED light sources are also integrated to make the measurement mostly independant from environment lighting conditions.
