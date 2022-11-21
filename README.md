@@ -7,6 +7,14 @@ Pocket LoC can be assembled with standard equipment found in a typcial engineeri
 ## Sensor
 The sensor for the Pocket LoC contains two spectral sensors ([AS7341](https://ams.com/en/as7341) from AMS) and a microcontroller (Atmel ATmega32U4) for operation. A second PCB with two LEDs as light sources is connected via a flat flexible cable (FFC), and also driven by the microcontroller. The sensor can be operated like an Arduino with connected peripherals, making coding simple.
 
+
+### Components
+
+Prices are estimates of current prices:
+- PCB 25-50€ (depends on manufacturer)
+- Circuit components (see Altium project for details) approx. 40€
+- [Flat Flexible Cable](https://www.digikey.de/de/products/detail/molex/0152670709/4427461)  
+
 ### PCB assembly
 All design files for the PCB can be found as an Altium project in the [hardware folder](https://github.com/Pocket-LoC/Sensor/tree/main/Hardware). You can order the ready printed PCB from manufacturers like [JLCPCB](https://jlcpcb.com/) or [multi-cb](https://www.multi-circuit-boards.eu/en/index.html) and assemble it yourself (requires tools and skills for SMD assembly), order an assembled PCB or contact me.
 
