@@ -10,7 +10,7 @@ The sensor for the Pocket LoC contains two spectral sensors ([AS7341](https://am
 
 ### Components
 
-Prices are estimates of current prices:
+Prices are current estimates:
 - PCB 25-50€ (depends on manufacturer)
 - Circuit components (see Altium project for details) approx. 40€
 - [Flat Flexible Cable](https://www.digikey.de/de/products/detail/molex/0152670709/4427461)  
