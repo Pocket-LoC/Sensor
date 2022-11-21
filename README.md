@@ -6,6 +6,7 @@ Pocket LoC can be assembled with standard equipment found in a typcial engineeri
 
 ## Sensor
 <img align = "right" src="https://user-images.githubusercontent.com/42568983/203098093-aa4930c4-2c17-4080-9b4d-5ead578a456f.jpg" width="40%" />
+
 The sensor for the Pocket LoC contains two spectral sensors ([AS7341](https://ams.com/en/as7341) from AMS) and a microcontroller (Atmel ATmega32U4) for operation. A second PCB with two LEDs as light sources is connected via a flat flexible cable (FFC), and also driven by the microcontroller. The sensor can be operated like an Arduino with connected peripherals, making coding simple.
 
 
