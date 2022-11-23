@@ -67,6 +67,8 @@ void Serial_input() {
       active = false;
       Serial_println("Stopped");
       digitalWrite(LED_GREEN, LOW);
+    }else if (strcmp(&Buffer_Data[0],"ID\r\n")==0){ //Print device id
+      Serial_println(DEVICE_ID);
     }else { 
       char *p = strstr(Buffer_Data,"\r\n"); *p=0;
       Serial.print("Wrong command (");

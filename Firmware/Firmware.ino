@@ -1,6 +1,8 @@
 int LED_RED = 6;
 int LED_GREEN = 13;
 
+String DEVICE_ID = "PocketLoCSensor";
+
 bool active = false;
 
 void set_sample_time(int channel, float sample_time);

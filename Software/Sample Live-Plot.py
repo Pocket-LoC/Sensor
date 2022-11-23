@@ -7,9 +7,13 @@ import matplotlib
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 import time
+import datetime
 from multiprocessing import Process, Queue, Event
+import csv
+from pathlib import Path
 
 HARDWARE_ID = "2341:8037"
+DEVICE_ID = "PocketLoCSensor"
 LINE_TERMINATOR = "\r\n"
 BAUDRATE = 9600
 TIMEOUT = 1 #s
@@ -20,25 +24,35 @@ gain_setting = 10 #this is adjusted by auto gain
 
 connection = None
 error_flag = False
+output_stream = None
 
 
 def connect_serial():
     ports = serial.tools.list_ports.comports()
     
-    my_port = ""
+    conn = None
     for port, desc, hwid in sorted(ports):
-        if HARDWARE_ID in hwid:
-            my_port = port
-            break
+        if HARDWARE_ID in hwid:            
+            try:
+                conn = serial.Serial(port=port, baudrate=BAUDRATE, timeout=TIMEOUT)
+            except serial.serialutil.SerialException:
+                #Port may be in use
+                print("Port in use. This may be due to an aborted connection. If no other matching port is found try un- and replugging the device.")
+                continue
+            
+            conn.write(str.encode("ID" + LINE_TERMINATOR))
+            read_id = conn.readline().decode('utf-8').replace(LINE_TERMINATOR, "")
+            if read_id == DEVICE_ID:
+                break
+            else:
+                conn.close()
+                conn = None
+            
     
-    if my_port == "":
-        raise Exception("Could not find valid port to connect to.")
+    if conn is None or not conn.is_open:
+        raise Exception("Could not find valid device to connect to.")
     
-    try:
-        return serial.Serial(port=my_port, baudrate=BAUDRATE, timeout=TIMEOUT)
-    except serial.serialutil.SerialException:
-        #Port may be in use - close and try again
-        raise Exception("Port in use. This may be due to an aborted connection. Try replugging the sensor.")
+    return conn
     
 def disconnect_serial():
     stop_command = "STOP"
@@ -201,11 +215,18 @@ def live_read(conn, xdat, s0, s1, stop_event):
 
 def live_plot_update(frame):
     
+    #temp array for data write
+    csv_data = []
     for i in range(xdata.qsize()):
         #Load data from the queues and fill into arrays
-        xdata_arr.append(xdata.get())
-        sensor0_data_arr.append(sensor0_data.get())
-        sensor1_data_arr.append(sensor1_data.get())
+        xdat = xdata.get()
+        s0dat = sensor0_data.get()
+        s1dat = sensor1_data.get()
+        csv_data.append([str(xdat)] + [str(x) for x in s0dat] + [str(x) for x in s1dat])
+        
+        xdata_arr.append(xdat)
+        sensor0_data_arr.append(s0dat)
+        sensor1_data_arr.append(s1dat)
         if xdata_arr[-1] > 10000 + xdata_arr[0]:
             xdata_arr.pop(0)
             sensor0_data_arr.pop(0)
@@ -225,6 +246,9 @@ def live_plot_update(frame):
     line13.set_data(shifted_x, [x[3] for x in sensor1_data_arr])
     line14.set_data(shifted_x, [x[4] for x in sensor1_data_arr])
     line15.set_data(shifted_x, [x[5] for x in sensor1_data_arr])
+    
+    output_stream.writerows(csv_data)
+    
     return line00, line01, line02, line03, line04, line05, line10, line11, line12, line13, line14, line15
         
 
@@ -239,6 +263,8 @@ def live_plot(selected_sensors, plot_colours):
     matplotlib.use('qtagg')
     global line00, line01, line02, line03, line04, line05
     fig, ax = plt.subplots(2)
+    fig.suptitle("Pocket LoC Sensor - Live Plot")
+    
     line00, = ax[0].plot([0,0])
     line00.set_label(selected_sensors[0])
     line00.set_color(plot_colours[0])
@@ -304,7 +330,6 @@ def live_plot(selected_sensors, plot_colours):
     sensor1_data = Queue()
     sensor1_data.put([0.0000000000,0.0000000000,0.0000000000,0.0000000000,0.0000000000,0.0000000000])
     
-    update_interval = SAMPLE_TIME*4
     global animation
     animation = FuncAnimation(fig, live_plot_update, interval=50, blit=True)
     
@@ -329,9 +354,25 @@ if __name__ == '__main__':
     
     connection = connect_serial()
     initialise()
+
     
     #this is used for labels
     selected_sensors = ["F1", "F3", "F5", "F7", "F8", "NIR"] 
     #selected from https://academo.org/demos/wavelength-to-colour-relationship/
     plot_colours = ["#7600ed", "#00d5ff", "#b3ff00", '#ff4f00', '#ff0000', '#610000'] 
+    
+    #create data folder if non-existent
+    Path("data").mkdir(exist_ok=True)
+    
+    #open a file to stream data to
+    datestring = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    output_file = open("data/sensor_data_" + datestring + ".csv", "w", encoding="UTF8")
+    output_stream = csv.writer(output_file)
+    #let us add some headers to the csv
+    output_stream.writerow(["timestamp"] + ["sensor0_" + x for x in selected_sensors] + ["sensor1_" + x for x in selected_sensors])
+    
+    #Get plotting
     live_plot(selected_sensors, plot_colours)
+    
+    #Clean up
+    output_file.close()
