@@ -82,7 +82,7 @@ def start_streaming():
     read_response(1)
     
 
-def initialise():
+def initialise(active_diodes):
     #Configure the sensor according to our needs
     
     connection.readlines() #Flush initialisation stuff from buffer
@@ -95,9 +95,7 @@ def initialise():
     Only 6 photodiodes can be active at once.
     """
     
-    #Use F1, F3, F5, F7, F8, NIR
-    mux_command = "C1010101101"
-    send_command(mux_command)
+    send_command(get_mux_command(active_diodes))
     
     read_response(3)
     
@@ -123,6 +121,28 @@ def initialise():
     """
     
     auto_gain()
+    
+def get_mux_command(active_diodes):
+    #Try to create the mux command for the sensor depending on a string array of actviated photodiodes
+    #Max. 6 photodiodes can be activated at once
+    #Accepted string inputs are F1, F2, F3, F4, F5, F6, F7, F8, CLEAR, NIR
+    
+    diode_names = ["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "CLEAR", "NIR"]
+    
+    output_mux = [0] * 10
+    
+    for diode in active_diodes:
+        try:
+            idx = diode_names.index(diode)
+            output_mux[idx] = 1
+        except ValueError:
+            print("The specified photodiode does not exist. Check your config. Results may contain unexpected values.")
+    
+    if sum(output_mux) > 6:
+        print("You have selected to many photodiodes. Check your config. Only the first 6 diodes will actually be set.")
+    
+    return "C" + "".join(str(x) for x in output_mux)
+    
     
 def auto_gain():
     #Set the gain to the highest value that will not produce a saturation error.
@@ -353,14 +373,21 @@ def live_plot(selected_sensors, plot_colours):
 if __name__ == '__main__':
     
     connection = connect_serial()
-    initialise()
-
     
-    #this is used for labels
+    """
+    This is used to configure photodiode mux - default suggestion: F1, F3, F5, F7, F8, NIR
+    Each photodiode (x) can either be activated (1) or deactviated (0) according to the list
+    F1, F2, F3, F4, F5, F6, F7, F8, CLEAR, NIR
+    Only 6 photodiodes can be active at once.
+    """
     selected_sensors = ["F1", "F3", "F5", "F7", "F8", "NIR"] 
+    
     #selected from https://academo.org/demos/wavelength-to-colour-relationship/
     plot_colours = ["#7600ed", "#00d5ff", "#b3ff00", '#ff4f00', '#ff0000', '#610000'] 
     
+    
+    initialise(selected_sensors)
+
     #create data folder if non-existent
     Path("data").mkdir(exist_ok=True)
     
