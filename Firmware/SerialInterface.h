@@ -2,7 +2,7 @@ char Buffer_Data[50];
 uint8_t strPointer=0;
 
 void Serial_init() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   strPointer=0;
   Buffer_Data[strPointer]=0;
 

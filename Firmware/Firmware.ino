@@ -181,23 +181,29 @@ String get_dataset(){
   bool hitMax1 = false; //Check if we have reached saturation
   String outString = "";
   for(int i = 0; i < 6; i++){
-      outString = outString + String(Adafruit_AS7341::toBasicCounts(readBuffer1[i], sensor1_gain, ATIME, sensor1_astep), 10) + "\t";
+      float outValue = Adafruit_AS7341::toBasicCounts(readBuffer1[i], sensor1_gain, ATIME, sensor1_astep);
+      char cbuffer[14];
+      dtostrf(outValue, 13, 7, cbuffer);
+      outString = outString + String(cbuffer) + ", ";
       hitMax1 = readBuffer1[i] > sensor1_saturation;
   }
   if(hitMax1){
-        outString = outString + "1\t";
+        outString = outString + "1, ";
       }else{
-        outString = outString + "0\t";
+        outString = outString + "0, ";
   }
   
   for(int i = 0; i < 6; i++){
-      outString = outString + String(Adafruit_AS7341::toBasicCounts(readBuffer0[i], sensor0_gain, ATIME, sensor0_astep), 10) + "\t";
+      float outValue = Adafruit_AS7341::toBasicCounts(readBuffer0[i], sensor0_gain, ATIME, sensor0_astep);
+      char cbuffer[14];
+      dtostrf(outValue, 13, 7, cbuffer);
+      outString = outString + String(cbuffer) + ", ";
       hitMax0 = readBuffer0[i] > sensor0_saturation;   
   }
   if(hitMax0){
-        outString = outString + "1\t";
+        outString = outString + "1, ";
       }else{
-        outString = outString + "0\t";
+        outString = outString + "0, ";
   }
 
   if(hitMax0 || hitMax1){
