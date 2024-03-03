@@ -1,6 +1,8 @@
 int LED_RED = 6;
 int LED_GREEN = 13;
 
+int MUX_RESET = 1;
+
 String DEVICE_ID = "PocketLoCSensor";
 
 bool active = false;
@@ -126,6 +128,9 @@ void initialise_sensor(int channel){
 
 
 void setup() {
+  pinMode(MUX_RESET, OUTPUT);//pull MUX reset high (reset on low)
+  digitalWrite(MUX_RESET, HIGH);
+
   pinMode(LED_RED, OUTPUT);//init LEDs
   pinMode(LED_GREEN, OUTPUT);
   
