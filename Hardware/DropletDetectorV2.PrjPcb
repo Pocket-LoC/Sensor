@@ -176,6 +176,40 @@ GenerateClassCluster=0
 DocumentUniqueId=UBGONFEE
 
 [Document9]
+DocumentPath=TC2030.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=GMIVLSFD
+
+[Document10]
+DocumentPath=TC2030.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=JVHTISAB
+
+[Document11]
 DocumentPath=DropletDetectorV2.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -205,102 +239,166 @@ DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\eda\data
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs for DropletDetectorV2\Design Rule Check - PCB.html
+DocumentPath=Project Outputs for DropletDetectorV2\Design Rule Check - Sensor.html
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\bottom_layer\features
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\bottom_3d_body\features
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\bottom_overlay\features
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\bottom_assembly\features
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\bottom_paste\features
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\bottom_component_center\features
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\bottom_solder\features
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\bottom_courtyard\features
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\comp_+_bot\features
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\bottom_layer_3\features
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\comp_+_top\features
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\bottom_layer_4\features
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\drill_drawing_top-bottom\features
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\bottom_overlay\features
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\drill_guide_top-bottom\features
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\bottom_paste\features
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\drill_plated_bottom-top\features
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\bottom_solder\features
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\keep-out_layer\features
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\comp_+_bot\features
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\mechanical_1\features
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\comp_+_top\features
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\mechanical_13\features
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\drill_drawing_top-bottom\features
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\mechanical_15\features
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\drill_guide_top-bottom\features
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\top_layer\features
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\drill_non-plated_bottom-top\features
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\top_overlay\features
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\drill_plated_bottom-top\features
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\top_paste\features
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\keep-out_layer\features
 DItemRevisionGUID=
 
 [GeneratedDocument21]
-DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\top_solder\features
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\mechanical_1\features
 DItemRevisionGUID=
 
 [GeneratedDocument22]
-DocumentPath=Project Outputs for DropletDetectorV2\LED.REP
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\mechanical_13\features
 DItemRevisionGUID=
 
 [GeneratedDocument23]
-DocumentPath=Project Outputs for DropletDetectorV2\odb\matrix\matrix
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\mechanical_15\features
 DItemRevisionGUID=
 
 [GeneratedDocument24]
-DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\netlists\cadnet\netlist
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\top_3d_body\features
 DItemRevisionGUID=
 
 [GeneratedDocument25]
-DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\profile
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\top_assembly\features
 DItemRevisionGUID=
 
 [GeneratedDocument26]
-DocumentPath=Project Outputs for DropletDetectorV2\Sensor.REP
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\top_component_center\features
 DItemRevisionGUID=
 
 [GeneratedDocument27]
-DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\stephdr
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\top_courtyard\features
 DItemRevisionGUID=
 
 [GeneratedDocument28]
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\top_layer_1\features
+DItemRevisionGUID=
+
+[GeneratedDocument29]
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\top_layer_2\features
+DItemRevisionGUID=
+
+[GeneratedDocument30]
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\top_overlay\features
+DItemRevisionGUID=
+
+[GeneratedDocument31]
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\top_paste\features
+DItemRevisionGUID=
+
+[GeneratedDocument32]
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\top_solder\features
+DItemRevisionGUID=
+
+[GeneratedDocument33]
+DocumentPath=Project Outputs for DropletDetectorV2\LED.REP
+DItemRevisionGUID=
+
+[GeneratedDocument34]
+DocumentPath=Project Outputs for DropletDetectorV2\odb\matrix\matrix
+DItemRevisionGUID=
+
+[GeneratedDocument35]
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\netlists\cadnet\netlist
+DItemRevisionGUID=
+
+[GeneratedDocument36]
+DocumentPath=Project Outputs for DropletDetectorV2\Pick Place for LED.csv
+DItemRevisionGUID=
+
+[GeneratedDocument37]
+DocumentPath=Project Outputs for DropletDetectorV2\Pick Place for LED.txt
+DItemRevisionGUID=
+
+[GeneratedDocument38]
+DocumentPath=Project Outputs for DropletDetectorV2\Pick Place for Sensor.csv
+DItemRevisionGUID=
+
+[GeneratedDocument39]
+DocumentPath=Project Outputs for DropletDetectorV2\Pick Place for Sensor.txt
+DItemRevisionGUID=
+
+[GeneratedDocument40]
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\profile
+DItemRevisionGUID=
+
+[GeneratedDocument41]
+DocumentPath=Project Outputs for DropletDetectorV2\Sensor.REP
+DItemRevisionGUID=
+
+[GeneratedDocument42]
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\stephdr
+DItemRevisionGUID=
+
+[GeneratedDocument43]
+DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\drill_non-plated_bottom-top\tools
+DItemRevisionGUID=
+
+[GeneratedDocument44]
 DocumentPath=Project Outputs for DropletDetectorV2\odb\steps\pcb\layers\drill_plated_bottom-top\tools
 DItemRevisionGUID=
 
@@ -616,6 +714,10 @@ OutputName2=Generates pick and place files
 OutputDocumentPath2=
 OutputVariantName2=[No Variations]
 OutputDefault2=0
+Configuration2_Name1=ForceUpdateSettings
+Configuration2_Item1=False
+Configuration2_Name2=OutputConfigurationParameter1
+Configuration2_Item2=Record=PickPlaceView|Units=Metric|GenerateCSVFormat=True|GenerateTextFormat=True|ShowUnits=False|Separator=.|ExcludeFilterParam=False|IncludeVariations=False|IncludeStandardNoBOM=False|Filter= |FilterActive=False|YFlip=False|Column#1=Name:Designator,Fixed:True,Metric:False,Visible:True,Sort:None,Position:0|Column#2=Name:Comment,Fixed:True,Metric:False,Visible:True,Sort:None,Position:1|Column#3=Name:Layer,Fixed:True,Metric:False,Visible:True,Sort:None,Position:2|Column#4=Name:Footprint,Fixed:True,Metric:False,Visible:True,Sort:None,Position:3|Column#5=Name:Footprint Description,Fixed:True,Metric:False,Visible:False,Sort:None,Position:4|Column#6=Name:Center-X,Fixed:True,Metric:True,Visible:True,Sort:None,Position:5|Column#7=Name:Center-Y,Fixed:True,Metric:True,Visible:True,Sort:None,Position:6|Column#8=Name:Rotation,Fixed:True,Metric:False,Visible:True,Sort:None,Position:7|Column#9=Name:Description,Fixed:True,Metric:False,Visible:True,Sort:None,Position:8|Column#10=Name:ComponentKind,Fixed:True,Metric:False,Visible:False,Sort:None,Position:9|Column#11=Name:Height,Fixed:True,Metric:True,Visible:False,Sort:None,Position:10|Column#12=Name:Ref-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:11|Column#13=Name:Ref-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:12|Column#14=Name:Pad-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:13|Column#15=Name:Pad-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:14|Column#16=Name:Variation,Fixed:True,Metric:False,Visible:False,Sort:None,Position:15|Column#17=Name:ComponentLink3Description,Fixed:False,Metric:False,Visible:False,Sort:None,Position:22|Column#18=Name:Packing,Fixed:False,Metric:False,Visible:False,Sort:None,Position:33|Column#19=Name:ComponentLink3URL,Fixed:False,Metric:False,Visible:False,Sort:None,Position:23|Column#20=Name:Arrow Price/Stock,Fixed:False,Metric:False,Visible:False,Sort:None,Position:17|Column#21=Name:RoHS,Fixed:False,Metric:False,Visible:False,Sort:None,Position:35|Column#22=Name:PartNumber,Fixed:False,Metric:False,Visible:False,Sort:None,Position:34|Column#23=Name:Manufacturer_Name,Fixed:False,Metric:False,Visible:False,Sort:None,Position:27|Column#24=Name:ComponentLink2Description,Fixed:False,Metric:False,Visible:False,Sort:None,Position:20|Column#25=Name:Arrow Part Number,Fixed:False,Metric:False,Visible:False,Sort:None,Position:16|Column#26=Name:PackageDescription,Fixed:False,Metric:False,Visible:False,Sort:None,Position:30|Column#27=Name:ComponentLink1URL,Fixed:False,Metric:False,Visible:False,Sort:None,Position:19|Column#28=Name:PackageReference,Fixed:False,Metric:False,Visible:False,Sort:None,Position:31|Column#29=Name:ComponentLink1Description,Fixed:False,Metric:False,Visible:False,Sort:None,Position:18|Column#30=Name:Height,Fixed:False,Metric:False,Visible:False,Sort:None,Position:25|Column#31=Name:Manufacturer_Part_Number,Fixed:False,Metric:False,Visible:False,Sort:None,Position:28|Column#32=Name:Mounting Technology,Fixed:False,Metric:False,Visible:False,Sort:None,Position:29|Column#33=Name:ComponentLink2URL,Fixed:False,Metric:False,Visible:False,Sort:None,Position:21|Column#34=Name:Manufacturer,Fixed:False,Metric:False,Visible:False,Sort:None,Position:26|Column#35=Name:Datasheet Link,Fixed:False,Metric:False,Visible:False,Sort:None,Position:24|Column#36=Name:PackageVersion,Fixed:False,Metric:False,Visible:False,Sort:None,Position:32|Column#37=Name:ManufactorPartNumber,Fixed:False,Metric:False,Visible:False,Sort:None,Position:62|Column#38=Name:Package Reference,Fixed:False,Metric:False,Visible:False,Sort:None,Position:80|Column#39=Name:RevisionNote,Fixed:False,Metric:False,Visible:False,Sort:None,Position:91|Column#40=Name:REACH SVHC,Fixed:False,Metric:False,Visible:False,Sort:None,Position:89|Column#41=Name:Configuration,Fixed:False,Metric:False,Visible:False,Sort:None,Position:44|Column#42=Name:Datasheet Version,Fixed:False,Metric:False,Visible:False,Sort:None,Position:51|Column#43=Name:Package Quantity,Fixed:False,Metric:False,Visible:False,Sort:None,Position:79|Column#44=Name:Case Code (Metric),Fixed:False,Metric:False,Visible:False,Sort:None,Position:39|Column#45=Name:SnapEDA_Link,Fixed:False,Metric:False,Visible:False,Sort:None,Position:94|Column#46=Name:Insulation Resistance,Fixed:False,Metric:False,Visible:False,Sort:None,Position:57|Column#47=Name:Min Operating Temperature,Fixed:False,Metric:False,Visible:False,Sort:None,Position:67|Column#48=Name:Connector Type,Fixed:False,Metric:False,Visible:False,Sort:None,Position:45|Column#49=Name:Manufacturer URL,Fixed:False,Metric:False,Visible:False,Sort:None,Position:63|Column#50=Name:Standard,Fixed:False,Metric:False,Visible:False,Sort:None,Position:95|Column#51=Name:Packaging,Fixed:False,Metric:False,Visible:False,Sort:None,Position:81|Column#52=Name:Mount,Fixed:False,Metric:False,Visible:False,Sort:None,Position:68|Column#53=Name:Contact Plating,Fixed:False,Metric:False,Visible:False,Sort:None,Position:47|Column#54=Name:RoHSCompliant,Fixed:False,Metric:False,Visible:False,Sort:None,Position:92|Column#55=Name:Gender,Fixed:False,Metric:False,Visible:False,Sort:None,Position:55|Column#56=Name:Case/Package,Fixed:False,Metric:False,Visible:False,Sort:None,Position:40|Column#57=Name:Resistance,Fixed:False,Metric:False,Visible:False,Sort:None,Position:90|Column#58=Name:Voltage Rating (DC),Fixed:False,Metric:False,Visible:False,Sort:None,Position:112|Column#59=Name:Availability,Fixed:False,Metric:False,Visible:False,Sort:None,Position:36|Column#60=Name:Supplier 1,Fixed:False,Metric:False,Visible:False,Sort:None,Position:96|Column#61=Name:Tolerance,Fixed:False,Metric:False,Visible:False,Sort:None,Position:105|Column#62=Name:Number of Contacts,Fixed:False,Metric:False,Visible:False,Sort:None,Position:73|Column#63=Name:MF,Fixed:False,Metric:False,Visible:False,Sort:None,Position:66|Column#64=Name:Brand,Fixed:False,Metric:False,Visible:False,Sort:None,Position:37|Column#65=Name:Supply Voltage,Fixed:False,Metric:False,Visible:False,Sort:None,Position:100|Column#66=Name:Current Rating,Fixed:False,Metric:False,Visible:False,Sort:None,Position:48|Column#67=Name:Datasheet URL,Fixed:False,Metric:False,Visible:False,Sort:None,Position:50|Column#68=Name:Lead Free,Fixed:False,Metric:False,Visible:False,Sort:None,Position:59|Column#69=Name:Radiation Hardening,Fixed:False,Metric:False,Visible:False,Sort:None,Position:88|Column#70=Name:Termination,Fixed:False,Metric:False,Visible:False,Sort:None,Position:103|Column#71=Name:Power Dissipation,Fixed:False,Metric:False,Visible:False,Sort:None,Position:83|Column#72=Name:Value,Fixed:False,Metric:False,Visible:False,Sort:None,Position:108|Column#73=Name:Case Code (Imperial),Fixed:False,Metric:False,Visible:False,Sort:None,Position:38|Column#74=Name:Factory Pack Quantity,Fixed:False,Metric:False,Visible:False,Sort:None,Position:53|Column#75=Name:Mouser Price/Stock,Fixed:False,Metric:False,Visible:False,Sort:None,Position:71|Column#76=Name:Price,Fixed:False,Metric:False,Visible:False,Sort:None,Position:85|Column#77=Name:Manufactor,Fixed:False,Metric:False,Visible:False,Sort:None,Position:61|Column#78=Name:trr Max (ns),Fixed:False,Metric:False,Visible:False,Sort:None,Position:106|Column#79=Name:VC,Fixed:False,Metric:False,Visible:False,Sort:None,Position:109|Column#80=Name:VDC,Fixed:False,Metric:False,Visible:False,Sort:None,Position:110|Column#81=Name:RT,Fixed:False,Metric:False,Visible:False,Sort:None,Position:93|Column#82=Name:Max Current Rating,Fixed:False,Metric:False,Visible:False,Sort:None,Position:64|Column#83=Name:TempRating,Fixed:False,Metric:False,Visible:False,Sort:None,Position:102|Column#84=Name:Length,Fixed:False,Metric:False,Visible:False,Sort:None,Position:60|Column#85=Name:Max Operating Temperature,Fixed:False,Metric:False,Visible:False,Sort:None,Position:65|Column#86=Name:Part Number,Fixed:False,Metric:False,Visible:False,Sort:None,Position:82|Column#87=Name:MP,Fixed:False,Metric:False,Visible:False,Sort:None,Position:72|Column#88=Name:PowerRating,Fixed:False,Metric:False,Visible:False,Sort:None,Position:84|Column#89=Name:Termination Style,Fixed:False,Metric:False,Visible:False,Sort:None,Position:104|Column#90=Name:Supplier Part Number 2,Fixed:False,Metric:False,Visible:False,Sort:None,Position:99|Column#91=Name:Tech,Fixed:False,Metric:False,Visible:False,Sort:None,Position:101|Column#92=Name:Width,Fixed:False,Metric:False,Visible:False,Sort:None,Position:115|Column#93=Name:Mounting Angle,Fixed:False,Metric:False,Visible:False,Sort:None,Position:69|Column#94=Name:CurrentRating,Fixed:False,Metric:False,Visible:False,Sort:None,Position:49|Column#95=Name:CO,Fixed:False,Metric:False,Visible:False,Sort:None,Position:41|Column#96=Name:Mouser Part Number,Fixed:False,Metric:False,Visible:False,Sort:None,Position:70|Column#97=Name:Supplier Part Number 1,Fixed:False,Metric:False,Visible:False,Sort:None,Position:98|Column#98=Name:Number of Terminals,Fixed:False,Metric:False,Visible:False,Sort:None,Position:74|Column#99=Name:Supplier 2,Fixed:False,Metric:False,Visible:False,Sort:None,Position:97|Column#100=Name:Code_JEDEC,Fixed:False,Metric:False,Visible:False,Sort:None,Position:42|Column#101=Name:Type,Fixed:False,Metric:False,Visible:False,Sort:None,Position:107|Column#102=Name:Kind,Fixed:False,Metric:False,Visible:False,Sort:None,Position:58|Column#103=Name:IF Max (A),Fixed:False,Metric:False,Visible:False,Sort:None,Position:56|Column#104=Name:Package,Fixed:False,Metric:False,Visible:False,Sort:None,Position:77|Column#105=Name:Product,Fixed:False,Metric:False,Visible:False,Sort:None,Position:86|Column#106=Name:Product Category,Fixed:False,Metric:False,Visible:False,Sort:None,Position:87|Column#107=Name:Color,Fixed:False,Metric:False,Visible:False,Sort:None,Position:43|Column#108=Name:Contact Material,Fixed:False,Metric:False,Visible:False,Sort:None,Position:46|Column#109=Name:Package Description,Fixed:False,Metric:False,Visible:False,Sort:None,Position:78|Column#110=Name:VT,Fixed:False,Metric:False,Visible:False,Sort:None,Position:114|Column#111=Name:Voltage Rating,Fixed:False,Metric:False,Visible:False,Sort:None,Position:111|Column#112=Name:Flammability Rating,Fixed:False,Metric:False,Visible:False,Sort:None,Position:54|Column#113=Name:DatasheetVersion,Fixed:False,Metric:False,Visible:False,Sort:None,Position:52|Column#114=Name:VoltageRating,Fixed:False,Metric:False,Visible:False,Sort:None,Position:113|Column#115=Name:Operating Temperature,Fixed:False,Metric:False,Visible:False,Sort:None,Position:75|Column#116=Name:Operating Temperature Range,Fixed:False,Metric:False,Visible:False,Sort:None,Position:76|DocumentPath=D:\FAUBox\Dokumente\Pocket LoC\Sensor\Hardware\Sensor.PcbDoc
 OutputType3=Test Points For Assembly
 OutputName3=Test Point Report
 OutputDocumentPath3=
@@ -664,7 +766,7 @@ OutputDefault6=0
 Configuration6_Name1=ForceUpdateSettings
 Configuration6_Item1=False
 Configuration6_Name2=OutputConfigurationParameter1
-Configuration6_Item2=Compression_None=True|Compression_tar_tgz=False|Compression_zip=True|ExportPositivePlaneLayers=False|GenerateDRCRulesFile=False|IncludeUnconnectedMidLayerPads=False|MergeNetTieNets=False|ObjsInsideBoardOutlineOnly=False|ODBProfileLayer=-1000|ODBProfileLayerV7=-1|PlotBackDrillingPairs=False|PlotBlindViasPair0_DrillType=Regular|PlotBlindViasPair0_HighLayer=Mid Layer 2|PlotBlindViasPair0_LowLayer=Mid Layer 1|PlotBlindViasPair0_Name= |PlotBlindViasPair0_Plot=False|PlotBlindViasPairs=False|PlotBottomLayerPlot=True|PlotBottomOverlayPlot=True|PlotBottomPastePlot=True|PlotBottomSolderPlot=True|PlotDrillDrawingPair0_DrillType=Regular|PlotDrillDrawingPair0_HighLayer=Bottom Layer|PlotDrillDrawingPair0_LowLayer=Top Layer|PlotDrillDrawingPair0_Plot=True|PlotDrillDrawingPair1_DrillType=Regular|PlotDrillDrawingPair1_HighLayer=Mid Layer 2|PlotDrillDrawingPair1_LowLayer=Mid Layer 1|PlotDrillDrawingPair1_Name= |PlotDrillDrawingPair1_Plot=False|PlotDrillDrawingPairs=False|PlotDrillGuidePair0_DrillType=Regular|PlotDrillGuidePair0_HighLayer=Bottom Layer|PlotDrillGuidePair0_LowLayer=Top Layer|PlotDrillGuidePair0_Plot=True|PlotDrillGuidePair1_DrillType=Regular|PlotDrillGuidePair1_HighLayer=Mid Layer 2|PlotDrillGuidePair1_LowLayer=Mid Layer 1|PlotDrillGuidePair1_Name= |PlotDrillGuidePair1_Plot=False|PlotDrillGuidePairs=False|PlotInternalPlane10Plot=False|PlotInternalPlane11Plot=False|PlotInternalPlane12Plot=False|PlotInternalPlane13Plot=False|PlotInternalPlane14Plot=False|PlotInternalPlane15Plot=False|PlotInternalPlane16Plot=False|PlotInternalPlane1Plot=False|PlotInternalPlane2Plot=False|PlotInternalPlane3Plot=False|PlotInternalPlane4Plot=False|PlotInternalPlane5Plot=False|PlotInternalPlane6Plot=False|PlotInternalPlane7Plot=False|PlotInternalPlane8Plot=False|PlotInternalPlane9Plot=False|PlotKeepOutLayerPlot=True|PlotMechanical10Plot=False|PlotMechanical11Plot=False|PlotMechanical12Plot=False|PlotMechanical13Plot=True|PlotMechanical14Plot=False|PlotMechanical15Plot=True|PlotMechanical16Plot=False|PlotMechanical1Plot=True|PlotMechanical2Plot=False|PlotMechanical3Plot=False|PlotMechanical4Plot=False|PlotMechanical5Plot=False|PlotMechanical6Plot=False|PlotMechanical7Plot=False|PlotMechanical8Plot=False|PlotMechanical9Plot=False|PlotMicroViasPairs=False|PlotMidLayer10Plot=False|PlotMidLayer11Plot=False|PlotMidLayer12Plot=False|PlotMidLayer13Plot=False|PlotMidLayer14Plot=False|PlotMidLayer15Plot=False|PlotMidLayer16Plot=False|PlotMidLayer17Plot=False|PlotMidLayer18Plot=False|PlotMidLayer19Plot=False|PlotMidLayer1Plot=False|PlotMidLayer20Plot=False|PlotMidLayer21Plot=False|PlotMidLayer22Plot=False|PlotMidLayer23Plot=False|PlotMidLayer24Plot=False|PlotMidLayer25Plot=False|PlotMidLayer26Plot=False|PlotMidLayer27Plot=False|PlotMidLayer28Plot=False|PlotMidLayer29Plot=False|PlotMidLayer2Plot=False|PlotMidLayer30Plot=False|PlotMidLayer3Plot=False|PlotMidLayer4Plot=False|PlotMidLayer5Plot=False|PlotMidLayer6Plot=False|PlotMidLayer7Plot=False|PlotMidLayer8Plot=False|PlotMidLayer9Plot=False|PlotNPTHPair0_DrillType=Regular|PlotNPTHPair0_HighLayer=Top Layer|PlotNPTHPair0_LowLayer=Bottom Layer|PlotNPTHPair0_Plot=False|PlotNPTHPairs=False|PlotPTHPair0_DrillType=Regular|PlotPTHPair0_HighLayer=Top Layer|PlotPTHPair0_LowLayer=Bottom Layer|PlotPTHPair0_Plot=True|PlotPTHPairs=False|PlotTopLayerPlot=True|PlotTopOverlayPlot=True|PlotTopPastePlot=True|PlotTopSolderPlot=True|Record=ODBView|Units=Metric|DocumentPath=D:\FAUBox\Dokumente\Microfluidic MolKom\Droplet Detector v2\DropletDetectorV2\LED.PcbDoc
+Configuration6_Item2=Compression_None=True|Compression_tar_tgz=False|Compression_zip=True|ExportPositivePlaneLayers=False|GenerateDRCRulesFile=False|IncludeUnconnectedMidLayerPads=False|MergeNetTieNets=False|ObjsInsideBoardOutlineOnly=False|ODBProfileLayer=-1000|ODBProfileLayerV7=-1|Plot_V7_1=True|Plot_V7_1_name=Mechanical Layer 20|Plot_V7_2=True|Plot_V7_2_name=Mechanical Layer 21|Plot_V7_3=True|Plot_V7_3_name=Mechanical Layer 23|Plot_V7_4=True|Plot_V7_4_name=Mechanical Layer 24|PlotBackDrillingPairs=False|PlotBlindViasPair0_DrillType=Regular|PlotBlindViasPair0_HighLayer=Mid Layer 2|PlotBlindViasPair0_LowLayer=Mid Layer 1|PlotBlindViasPair0_Plot=False|PlotBlindViasPairs=False|PlotBottomLayerPlot=True|PlotBottomOverlayPlot=True|PlotBottomPastePlot=True|PlotBottomSolderPlot=True|PlotDrillDrawingPair0_DrillType=Regular|PlotDrillDrawingPair0_HighLayer=Bottom Layer|PlotDrillDrawingPair0_LowLayer=Top Layer|PlotDrillDrawingPair0_Plot=True|PlotDrillDrawingPair1_DrillType=Regular|PlotDrillDrawingPair1_HighLayer=Mid Layer 2|PlotDrillDrawingPair1_LowLayer=Mid Layer 1|PlotDrillDrawingPair1_Plot=False|PlotDrillDrawingPairs=False|PlotDrillGuidePair0_DrillType=Regular|PlotDrillGuidePair0_HighLayer=Bottom Layer|PlotDrillGuidePair0_LowLayer=Top Layer|PlotDrillGuidePair0_Plot=True|PlotDrillGuidePair1_DrillType=Regular|PlotDrillGuidePair1_HighLayer=Mid Layer 2|PlotDrillGuidePair1_LowLayer=Mid Layer 1|PlotDrillGuidePair1_Plot=False|PlotDrillGuidePairs=False|PlotInternalPlane10Plot=False|PlotInternalPlane11Plot=False|PlotInternalPlane12Plot=False|PlotInternalPlane13Plot=False|PlotInternalPlane14Plot=False|PlotInternalPlane15Plot=False|PlotInternalPlane16Plot=False|PlotInternalPlane1Plot=False|PlotInternalPlane2Plot=False|PlotInternalPlane3Plot=False|PlotInternalPlane4Plot=False|PlotInternalPlane5Plot=False|PlotInternalPlane6Plot=False|PlotInternalPlane7Plot=False|PlotInternalPlane8Plot=False|PlotInternalPlane9Plot=False|PlotKeepOutLayerPlot=True|PlotMechanical10Plot=False|PlotMechanical11Plot=False|PlotMechanical12Plot=False|PlotMechanical13Plot=True|PlotMechanical14Plot=False|PlotMechanical15Plot=True|PlotMechanical16Plot=True|PlotMechanical1Plot=True|PlotMechanical2Plot=True|PlotMechanical3Plot=True|PlotMechanical4Plot=False|PlotMechanical5Plot=True|PlotMechanical6Plot=False|PlotMechanical7Plot=False|PlotMechanical8Plot=False|PlotMechanical9Plot=False|PlotMicroViasPairs=False|PlotMidLayer10Plot=False|PlotMidLayer11Plot=False|PlotMidLayer12Plot=False|PlotMidLayer13Plot=False|PlotMidLayer14Plot=False|PlotMidLayer15Plot=False|PlotMidLayer16Plot=False|PlotMidLayer17Plot=False|PlotMidLayer18Plot=False|PlotMidLayer19Plot=False|PlotMidLayer1Plot=True|PlotMidLayer20Plot=False|PlotMidLayer21Plot=False|PlotMidLayer22Plot=False|PlotMidLayer23Plot=False|PlotMidLayer24Plot=False|PlotMidLayer25Plot=False|PlotMidLayer26Plot=False|PlotMidLayer27Plot=False|PlotMidLayer28Plot=False|PlotMidLayer29Plot=False|PlotMidLayer2Plot=True|PlotMidLayer30Plot=False|PlotMidLayer3Plot=False|PlotMidLayer4Plot=False|PlotMidLayer5Plot=False|PlotMidLayer6Plot=False|PlotMidLayer7Plot=False|PlotMidLayer8Plot=False|PlotMidLayer9Plot=False|PlotNPTHPair0_DrillType=Regular|PlotNPTHPair0_HighLayer=Top Layer|PlotNPTHPair0_LowLayer=Bottom Layer|PlotNPTHPair0_Plot=True|PlotNPTHPairs=False|PlotPTHPair0_DrillType=Regular|PlotPTHPair0_HighLayer=Top Layer|PlotPTHPair0_LowLayer=Bottom Layer|PlotPTHPair0_Plot=True|PlotPTHPairs=False|PlotTopLayerPlot=True|PlotTopOverlayPlot=True|PlotTopPastePlot=True|PlotTopSolderPlot=True|Record=ODBView|Units=Metric|DocumentPath=D:\FAUBox\Dokumente\Pocket LoC\Sensor\Hardware\Sensor.PcbDoc
 OutputType7=Mask
 OutputName7=Solder/Paste Mask Prints
 OutputDocumentPath7=
@@ -714,19 +816,19 @@ Configuration1_Item1=CaptionAsName
 Configuration1_Name2=ForceUpdateSettings
 Configuration1_Item2=False
 Configuration1_Name3=General
-Configuration1_Item3=OpenExported=False|AddToProject=False|ReportBOMViolationsInMessages=False|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePcbData=False|IncludeVaultData=True|IncludeCloudData=False|IncludeDocumentData=True|IncludeAlternatives=False|ShowExportOptions=True|TemplateFilename=|TemplateVaultGuid=|TemplateItemGuid=|TemplateRevisionGuid=|BatchMode=5|FormWidth=1200|FormHeight=710|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=EUR|SolutionsPerItem=1|SuppliersPerSolution=1|ViewType=0|UseDirectApi=False|BomSetName=
+Configuration1_Item3=OpenExported=False|AddToProject=False|ReportBOMViolationsInMessages=False|ForceFit=False|NotFitted=False|Database=False|DatabasePriority=False|IncludePcbData=False|IncludeVaultData=False|IncludeCloudData=False|IncludeDocumentData=False|IncludeAlternatives=True|ShowExportOptions=True|TemplateFilename=|TemplateVaultGuid=|TemplateItemGuid=|TemplateRevisionGuid=|BatchMode=5|FormWidth=1200|FormHeight=710|SupplierProdQty=1|SupplierAutoQty=True|SupplierUseCachedPricing=False|SupplierCurrency=EUR|SolutionsPerItem=1|SuppliersPerSolution=1|ViewType=0|UseDirectApi=True|BomSetName=
 Configuration1_Name4=GroupOrder
 Configuration1_Item4=
 Configuration1_Name5=SortOrder
-Configuration1_Item5=Description=Up|Designator=Up
+Configuration1_Item5=Revision Status=Up
 Configuration1_Name6=VisibleOrder
-Configuration1_Item6=Line #=54|Comment=139|Description=111|Designator=158|Value=85|Revision State=117|Revision Status=101|Quantity=67|Manufacturer 1=102|Manufacturer Part Number 1=169|Manufacturer Lifecycle 1=147|Supplier 1=75|Supplier Part Number 1=142|Supplier Unit Price 1=127|Supplier Subtotal 1=122
+Configuration1_Item6=Line #=54|Comment=139|Description=111|Designator=110|Revision ID=80|Revision State=117|Revision Status=101|Quantity=67|Value=58|Manufacturer 1=102|Manufacturer Part Number 1=169|Manufacturer Lifecycle 1=147|Supplier 1=75|Supplier Part Number 1=142|Supplier Unit Price 1=127|Supplier Subtotal 1=122
 Configuration1_Name7=VisibleOrder_Base
-Configuration1_Item7=Line #=54|Comment=139|Description=111|Designator=158|Value=85|Revision State=117|Revision Status=101|Quantity=67|Manufacturer 1=102|Manufacturer Part Number 1=169|Manufacturer Lifecycle 1=147|Supplier 1=75|Supplier Part Number 1=142|Supplier Unit Price 1=127|Supplier Subtotal 1=122
+Configuration1_Item7=Line #=54|Comment=139|Description=111|Designator=110|Revision ID=80|Revision State=117|Revision Status=101|Quantity=67|Value=58|Manufacturer 1=102|Manufacturer Part Number 1=169|Manufacturer Lifecycle 1=147|Supplier 1=75|Supplier Part Number 1=142|Supplier Unit Price 1=127|Supplier Subtotal 1=122
 Configuration1_Name8=VisibleOrder_Consolidated
-Configuration1_Item8=Line #=54|Comment=139|Description=82|Designator=80|Revision ID=140|Revision State=141|Revision Status=101|Quantity=67|Manufacturer 1=102|Manufacturer Part Number 1=169|Manufacturer Lifecycle 1=147|Supplier 1=75|Supplier Part Number 1=142|Supplier Unit Price 1=127|Supplier Subtotal 1=122
+Configuration1_Item8=Line #=100|Comment=100|Description=100|Designator=100|Revision ID=100|Revision State=100|Revision Status=100|Quantity=100|Manufacturer 1=102|Manufacturer Part Number 1=169|Manufacturer Lifecycle 1=147|Supplier 1=75|Supplier Part Number 1=142|Supplier Unit Price 1=127|Supplier Subtotal 1=122
 Configuration1_Name9=VisibleOrder_Flat
-Configuration1_Item9=Line #=54|Comment=139|Description=82|Designator=108|Revision ID=140|Revision State=141|Revision Status=101|Manufacturer 1=102|Manufacturer Part Number 1=169|Manufacturer Lifecycle 1=147|Supplier 1=75|Supplier Part Number 1=142|Supplier Unit Price 1=127|Supplier Subtotal 1=122
+Configuration1_Item9=Line #=100|Comment=100|Description=100|Designator=100|Revision ID=100|Revision State=100|Revision Status=100|Manufacturer 1=102|Manufacturer Part Number 1=169|Manufacturer Lifecycle 1=147|Supplier 1=75|Supplier Part Number 1=142|Supplier Unit Price 1=127|Supplier Subtotal 1=122
 OutputType2=ComponentCrossReference
 OutputName2=Component Cross Reference Report
 OutputDocumentPath2=
